@@ -9,21 +9,25 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var lbScore: UILabel!
+    @IBOutlet weak var lbBestScore: UILabel!
+    private var bestScore: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSLog("2023.12.12 19:18")
-        // Do any additional setup after loading the view.
+        NSLog("2024.01.03 19:01")
+        bestScore = UserDefaults.standard.integer(forKey: "BestScore")
+        lbBestScore.text = "BestScore : \(bestScore)"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setLbScore(score: Int) {
+        lbScore.text = "Score : \(score)"
     }
-    */
-
+    func setBestScore(score: Int) {
+        if score > bestScore {
+            bestScore = score
+        }
+        UserDefaults.standard.setValue(bestScore, forKey: "BestScore")
+        lbBestScore.text = "BestScore : \(bestScore)"
+    }
 }

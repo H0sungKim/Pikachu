@@ -14,27 +14,27 @@
 		4E4763562B21BD37006E7A4A /* PikachuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4763552B21BD37006E7A4A /* PikachuUITests.swift */; };
 		4E4763582B21BD37006E7A4A /* PikachuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4763572B21BD37006E7A4A /* PikachuUITestsLaunchTests.swift */; };
 		4E4763862B21F993006E7A4A /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E4763832B21F993006E7A4A /* jump.wav */; };
-		4E4763872B21F993006E7A4A /* dead.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E4763842B21F993006E7A4A /* dead.wav */; };
 		4E4763882B21F993006E7A4A /* route1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E4763852B21F993006E7A4A /* route1.mp3 */; };
 		4E47638A2B21FACD006E7A4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4763892B21FACD006E7A4A /* MainViewController.swift */; };
 		4E47638C2B21FADD006E7A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E47638B2B21FADD006E7A4A /* Main.storyboard */; };
 		4E47638E2B21FD24006E7A4A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E47638D2B21FD24006E7A4A /* GameView.swift */; };
-		4EBBEF2A2B285E6A008857B6 /* cloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF1A2B285E69008857B6 /* cloud1.png */; };
-		4EBBEF2B2B285E6A008857B6 /* snorlax4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF1B2B285E69008857B6 /* snorlax4.png */; };
+		4EBBEF2B2B285E6A008857B6 /* snorlaxstandup.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF1B2B285E69008857B6 /* snorlaxstandup.png */; };
 		4EBBEF2C2B285E6A008857B6 /* pikaattack.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF1C2B285E69008857B6 /* pikaattack.png */; };
 		4EBBEF2D2B285E6A008857B6 /* pikajump.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF1D2B285E69008857B6 /* pikajump.png */; };
-		4EBBEF2E2B285E6A008857B6 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF1E2B285E69008857B6 /* cloud2.png */; };
-		4EBBEF2F2B285E6A008857B6 /* snorlax1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF1F2B285E69008857B6 /* snorlax1.png */; };
+		4EBBEF2F2B285E6A008857B6 /* snorlaxsleep.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF1F2B285E69008857B6 /* snorlaxsleep.png */; };
 		4EBBEF302B285E6A008857B6 /* pikawalkleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF202B285E69008857B6 /* pikawalkleft.png */; };
-		4EBBEF312B285E6A008857B6 /* snorlax3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF212B285E69008857B6 /* snorlax3.png */; };
+		4EBBEF312B285E6A008857B6 /* snorlaxwakeup2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF212B285E69008857B6 /* snorlaxwakeup2.png */; };
 		4EBBEF322B285E6A008857B6 /* pikahurt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF222B285E69008857B6 /* pikahurt.png */; };
-		4EBBEF332B285E6A008857B6 /* snorlax2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF232B285E6A008857B6 /* snorlax2.png */; };
+		4EBBEF332B285E6A008857B6 /* snorlaxwakeup1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF232B285E6A008857B6 /* snorlaxwakeup1.png */; };
 		4EBBEF342B285E6A008857B6 /* pikaready.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF242B285E6A008857B6 /* pikaready.png */; };
 		4EBBEF352B285E6A008857B6 /* pikawalkright.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF252B285E6A008857B6 /* pikawalkright.png */; };
 		4EBBEF362B285E6A008857B6 /* pikastand.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF262B285E6A008857B6 /* pikastand.png */; };
 		4EBBEF372B285E6A008857B6 /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF272B285E6A008857B6 /* shadow.png */; };
 		4EBBEF382B285E6A008857B6 /* pikadead.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF282B285E6A008857B6 /* pikadead.png */; };
-		4EBBEF392B285E6A008857B6 /* snorlax5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF292B285E6A008857B6 /* snorlax5.png */; };
+		4EBBEF392B285E6A008857B6 /* snorlaxroar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF292B285E6A008857B6 /* snorlaxroar.png */; };
+		4EC8B58D2B45852500143702 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8B58B2B45852500143702 /* cloud2.png */; };
+		4EC8B58E2B45852500143702 /* cloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8B58C2B45852500143702 /* cloud1.png */; };
+		4EC8B5902B45A16B00143702 /* dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8B58F2B45A16B00143702 /* dead.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,27 +66,27 @@
 		4E4763552B21BD37006E7A4A /* PikachuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikachuUITests.swift; sourceTree = "<group>"; };
 		4E4763572B21BD37006E7A4A /* PikachuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikachuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4E4763832B21F993006E7A4A /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
-		4E4763842B21F993006E7A4A /* dead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dead.wav; sourceTree = "<group>"; };
 		4E4763852B21F993006E7A4A /* route1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = route1.mp3; sourceTree = "<group>"; };
 		4E4763892B21FACD006E7A4A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E47638B2B21FADD006E7A4A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E47638D2B21FD24006E7A4A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		4EBBEF1A2B285E69008857B6 /* cloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud1.png; path = ../../../../Downloads/pikachures/cloud1.png; sourceTree = "<group>"; };
-		4EBBEF1B2B285E69008857B6 /* snorlax4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlax4.png; path = ../../../../Downloads/pikachures/snorlax4.png; sourceTree = "<group>"; };
+		4EBBEF1B2B285E69008857B6 /* snorlaxstandup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlaxstandup.png; path = ../../../../Downloads/pikachures/snorlaxstandup.png; sourceTree = "<group>"; };
 		4EBBEF1C2B285E69008857B6 /* pikaattack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pikaattack.png; path = ../../../../Downloads/pikachures/pikaattack.png; sourceTree = "<group>"; };
 		4EBBEF1D2B285E69008857B6 /* pikajump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pikajump.png; path = ../../../../Downloads/pikachures/pikajump.png; sourceTree = "<group>"; };
-		4EBBEF1E2B285E69008857B6 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud2.png; path = ../../../../Downloads/pikachures/cloud2.png; sourceTree = "<group>"; };
-		4EBBEF1F2B285E69008857B6 /* snorlax1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlax1.png; path = ../../../../Downloads/pikachures/snorlax1.png; sourceTree = "<group>"; };
+		4EBBEF1F2B285E69008857B6 /* snorlaxsleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlaxsleep.png; path = ../../../../Downloads/pikachures/snorlaxsleep.png; sourceTree = "<group>"; };
 		4EBBEF202B285E69008857B6 /* pikawalkleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pikawalkleft.png; path = ../../../../Downloads/pikachures/pikawalkleft.png; sourceTree = "<group>"; };
-		4EBBEF212B285E69008857B6 /* snorlax3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlax3.png; path = ../../../../Downloads/pikachures/snorlax3.png; sourceTree = "<group>"; };
+		4EBBEF212B285E69008857B6 /* snorlaxwakeup2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlaxwakeup2.png; path = ../../../../Downloads/pikachures/snorlaxwakeup2.png; sourceTree = "<group>"; };
 		4EBBEF222B285E69008857B6 /* pikahurt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pikahurt.png; path = ../../../../Downloads/pikachures/pikahurt.png; sourceTree = "<group>"; };
-		4EBBEF232B285E6A008857B6 /* snorlax2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlax2.png; path = ../../../../Downloads/pikachures/snorlax2.png; sourceTree = "<group>"; };
+		4EBBEF232B285E6A008857B6 /* snorlaxwakeup1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlaxwakeup1.png; path = ../../../../Downloads/pikachures/snorlaxwakeup1.png; sourceTree = "<group>"; };
 		4EBBEF242B285E6A008857B6 /* pikaready.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pikaready.png; sourceTree = "<group>"; };
 		4EBBEF252B285E6A008857B6 /* pikawalkright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pikawalkright.png; path = ../../../../Downloads/pikachures/pikawalkright.png; sourceTree = "<group>"; };
 		4EBBEF262B285E6A008857B6 /* pikastand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pikastand.png; path = ../../../../Downloads/pikachures/pikastand.png; sourceTree = "<group>"; };
 		4EBBEF272B285E6A008857B6 /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
 		4EBBEF282B285E6A008857B6 /* pikadead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pikadead.png; path = ../../../../Downloads/pikachures/pikadead.png; sourceTree = "<group>"; };
-		4EBBEF292B285E6A008857B6 /* snorlax5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlax5.png; path = ../../../../Downloads/pikachures/snorlax5.png; sourceTree = "<group>"; };
+		4EBBEF292B285E6A008857B6 /* snorlaxroar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snorlaxroar.png; path = ../../../../Downloads/pikachures/snorlaxroar.png; sourceTree = "<group>"; };
+		4EC8B58B2B45852500143702 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud2.png; sourceTree = "<group>"; };
+		4EC8B58C2B45852500143702 /* cloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud1.png; sourceTree = "<group>"; };
+		4EC8B58F2B45A16B00143702 /* dead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dead.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +170,8 @@
 		4E4763642B21BD40006E7A4A /* res */ = {
 			isa = PBXGroup;
 			children = (
-				4EBBEF1A2B285E69008857B6 /* cloud1.png */,
-				4EBBEF1E2B285E69008857B6 /* cloud2.png */,
+				4EC8B58C2B45852500143702 /* cloud1.png */,
+				4EC8B58B2B45852500143702 /* cloud2.png */,
 				4EBBEF1C2B285E69008857B6 /* pikaattack.png */,
 				4EBBEF282B285E6A008857B6 /* pikadead.png */,
 				4EBBEF222B285E69008857B6 /* pikahurt.png */,
@@ -181,12 +181,12 @@
 				4EBBEF202B285E69008857B6 /* pikawalkleft.png */,
 				4EBBEF252B285E6A008857B6 /* pikawalkright.png */,
 				4EBBEF272B285E6A008857B6 /* shadow.png */,
-				4EBBEF1F2B285E69008857B6 /* snorlax1.png */,
-				4EBBEF232B285E6A008857B6 /* snorlax2.png */,
-				4EBBEF212B285E69008857B6 /* snorlax3.png */,
-				4EBBEF1B2B285E69008857B6 /* snorlax4.png */,
-				4EBBEF292B285E6A008857B6 /* snorlax5.png */,
-				4E4763842B21F993006E7A4A /* dead.wav */,
+				4EBBEF1F2B285E69008857B6 /* snorlaxsleep.png */,
+				4EBBEF232B285E6A008857B6 /* snorlaxwakeup1.png */,
+				4EBBEF212B285E69008857B6 /* snorlaxwakeup2.png */,
+				4EBBEF1B2B285E69008857B6 /* snorlaxstandup.png */,
+				4EBBEF292B285E6A008857B6 /* snorlaxroar.png */,
+				4EC8B58F2B45A16B00143702 /* dead.mp3 */,
 				4E4763832B21F993006E7A4A /* jump.wav */,
 				4E4763852B21F993006E7A4A /* route1.mp3 */,
 			);
@@ -306,24 +306,24 @@
 			files = (
 				4EBBEF2D2B285E6A008857B6 /* pikajump.png in Resources */,
 				4EBBEF322B285E6A008857B6 /* pikahurt.png in Resources */,
-				4EBBEF312B285E6A008857B6 /* snorlax3.png in Resources */,
+				4EBBEF312B285E6A008857B6 /* snorlaxwakeup2.png in Resources */,
 				4E47638C2B21FADD006E7A4A /* Main.storyboard in Resources */,
+				4EC8B58D2B45852500143702 /* cloud2.png in Resources */,
 				4E4763412B21BD37006E7A4A /* LaunchScreen.storyboard in Resources */,
-				4EBBEF2F2B285E6A008857B6 /* snorlax1.png in Resources */,
-				4EBBEF2B2B285E6A008857B6 /* snorlax4.png in Resources */,
-				4EBBEF2A2B285E6A008857B6 /* cloud1.png in Resources */,
-				4EBBEF332B285E6A008857B6 /* snorlax2.png in Resources */,
+				4EBBEF2F2B285E6A008857B6 /* snorlaxsleep.png in Resources */,
+				4EBBEF2B2B285E6A008857B6 /* snorlaxstandup.png in Resources */,
+				4EBBEF332B285E6A008857B6 /* snorlaxwakeup1.png in Resources */,
 				4EBBEF342B285E6A008857B6 /* pikaready.png in Resources */,
 				4E47633E2B21BD37006E7A4A /* Assets.xcassets in Resources */,
 				4EBBEF382B285E6A008857B6 /* pikadead.png in Resources */,
 				4EBBEF2C2B285E6A008857B6 /* pikaattack.png in Resources */,
-				4E4763872B21F993006E7A4A /* dead.wav in Resources */,
-				4EBBEF2E2B285E6A008857B6 /* cloud2.png in Resources */,
+				4EC8B5902B45A16B00143702 /* dead.mp3 in Resources */,
 				4EBBEF302B285E6A008857B6 /* pikawalkleft.png in Resources */,
 				4EBBEF372B285E6A008857B6 /* shadow.png in Resources */,
 				4E4763862B21F993006E7A4A /* jump.wav in Resources */,
+				4EC8B58E2B45852500143702 /* cloud1.png in Resources */,
 				4EBBEF362B285E6A008857B6 /* pikastand.png in Resources */,
-				4EBBEF392B285E6A008857B6 /* snorlax5.png in Resources */,
+				4EBBEF392B285E6A008857B6 /* snorlaxroar.png in Resources */,
 				4EBBEF352B285E6A008857B6 /* pikawalkright.png in Resources */,
 				4E4763882B21F993006E7A4A /* route1.mp3 in Resources */,
 			);

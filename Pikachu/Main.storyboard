@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,16 +21,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdF-Za-7NW">
+                                <rect key="frame" x="0.0" y="59" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frI-GB-mQ3">
+                                <rect key="frame" x="351" y="59" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="OvE-c2-o1D" secondAttribute="trailing" id="GrM-24-iX9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="frI-GB-mQ3" secondAttribute="trailing" id="KQl-33-wpM"/>
                             <constraint firstItem="OvE-c2-o1D" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="LFz-yi-LxN"/>
                             <constraint firstItem="OvE-c2-o1D" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="LWy-cQ-Uvt"/>
+                            <constraint firstItem="sdF-Za-7NW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eHV-Bv-37F"/>
+                            <constraint firstItem="sdF-Za-7NW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qQ7-mL-NG5"/>
+                            <constraint firstItem="frI-GB-mQ3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sbr-eN-Na2"/>
                             <constraint firstAttribute="bottom" secondItem="OvE-c2-o1D" secondAttribute="bottom" id="uQA-bw-HHI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbBestScore" destination="frI-GB-mQ3" id="mbg-0d-IJb"/>
+                        <outlet property="lbScore" destination="sdF-Za-7NW" id="IFF-Ab-EoO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
