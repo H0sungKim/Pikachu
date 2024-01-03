@@ -2,22 +2,133 @@
 //  GameView.swift
 //  Pikachu
 //
-//  Created by 김기훈 on 2023/12/07.
+//  Created by Hello on 2023/12/07.
 //
 
-
-// MARK: - Hello
 
 import UIKit
 import AVFoundation
 
 class GameView: UIView {
-    let BACKGROUND_SOUND: Int = 0
-    let JUMP_SOUND: Int = 1
-    let DEAD_SOUND: Int = 2
     
-    var backgroundSoundPlayer: AVAudioPlayer?
+    class Pikachu {
+        enum Status: Int {
+            case standL = 0
+            case standR
+            case walkLeft
+            case walkRight
+            case ready
+            case jump
+            case hurt
+            case dead
+        }
+        
+        var status: Status
+        let images: [UIImage]
+        var statusFlag: Int
+        
+        let x: Int = 50
+        var y: Int = 400
+        
+        init() {
+            self.status = .standL
+            self.images = [
+                UIImage(named: "pikastand.png")!,
+                UIImage(named: "pikastand.png")!,
+                UIImage(named: "pikawalkleft.png")!,
+                UIImage(named: "pikawalkright.png")!,
+                UIImage(named: "pikaready.png")!,
+                UIImage(named: "pikajump.png")!,
+                UIImage(named: "pikahurt.png")!,
+                UIImage(named: "pikadead.png")!,
+            ]
+            self.statusFlag = 0
+        }
+        
+        func draw() {
+            self.images[self.status.rawValue].draw(at: CGPoint(x: self.x, y: self.y))
+        }
+        func updateStatus() {
+            switch self.status {
+            case .standL:
+                if self.statusFlag == 2 {
+                    self.status = .walkLeft
+                    self.statusFlag = 0
+                } else {
+                    self.statusFlag += 1
+                }
+            case .standR:
+                if self.statusFlag == 2 {
+                    self.status = .walkRight
+                    self.statusFlag = 0
+                } else {
+                    self.statusFlag += 1
+                }
+            case .walkLeft:
+                if self.statusFlag == 2 {
+                    self.status = .standR
+                    self.statusFlag = 0
+                } else {
+                    self.statusFlag += 1
+                }
+            case .walkRight:
+                if self.statusFlag == 2 {
+                    self.status = .standL
+                    self.statusFlag = 0
+                } else {
+                    self.statusFlag += 1
+                }
+            case .ready:
+                if self.statusFlag == 4 {
+                    self.status = .jump
+                    self.statusFlag = 0
+                } else {
+                    self.statusFlag += 1
+                }
+            case .jump:
+                if self.statusFlag == 6 {
+                    self.status = .standL
+                    self.statusFlag = 0
+                } else {
+                    self.statusFlag += 1
+                    self.y = 400 + (self.statusFlag*self.statusFlag - 6*self.statusFlag)*10
+                }
+            case .hurt:
+                if self.statusFlag == 10 {
+                    self.status = .dead
+                    self.statusFlag = 0
+                } else {
+                    self.statusFlag += 1
+                }
+            case .dead:
+                break
+            }
+        }
+    }
     
+    class Cloud {
+        let type: Int
+        var x: Int
+        let y: Int
+        
+        init(type: Int, x: Int) {
+            self.type = type
+            self.x = x
+            self.y = Int.random(in: 100...300)
+        }
+    }
+    
+    class Snorlax {
+        
+    }
+    
+    private var backgroundSoundPlayer: AVAudioPlayer?
+    private var screenWidth: Int = 0
+    private var screenHeight: Int = 0
+    
+    private var gameTimer: Timer!
+    
+    private var pikachu: Pikachu = Pikachu()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,43 +140,32 @@ class GameView: UIView {
         initialize()
     }
     
-    func initialize() {
-        playSound(sound: BACKGROUND_SOUND)
+    private func initialize() {
+        screenWidth = Int(self.frame.width)
+        screenHeight = Int(self.frame.height)
+        gameTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateScreen), userInfo: nil, repeats: true)
     }
     
     
+    @objc private func updateScreen() {
+        setNeedsDisplay()
+        pikachu.updateStatus()
+    }
+    
+
+    
+    private func playSound(sound: Int) {
+        
+    }
     
     override func draw(_ rect: CGRect) {
-        //var drawable: UIImage? = UIImage(named: "pikastand.png")?.resizableImage(withCapInsets: .zero, resizingMode:.stretch)
-        let drawable: UIImage? = UIImage(named: "pikastand.png")
-
-//        let imageRect = CGRect(x: 50, y: 50, width: 200, height: 200)
-        
-        drawable!.draw(at: CGPoint(x: 50, y: 400))
+        // draw background
+        pikachu.draw()
     }
-    
-    func playSound(sound: Int) {
-        var url: URL
-        switch sound {
-        case BACKGROUND_SOUND :
-            url = Bundle.main.url(forResource: "route1", withExtension: "mp3")!
-        case JUMP_SOUND :
-            url = Bundle.main.url(forResource: "jump", withExtension: "wav")!
-        case DEAD_SOUND :
-            url = Bundle.main.url(forResource: "dead", withExtension: "wav")!
-        default :
-            return
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if pikachu.status.rawValue < 4 {
+            pikachu.status = .ready
+            setNeedsDisplay()
         }
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-            backgroundSoundPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            backgroundSoundPlayer?.numberOfLoops = -1
-            guard let player = backgroundSoundPlayer else { return }
-            player.play()
-        } catch let error {
-            print(error.localizedDescription)
-        }
-        
     }
 }
