@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Pikachu
 //
-//  Created by 김기훈 on 2023/12/07.
+//  Created by Hosung.Kim on 2023/12/07.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  GameView.swift
 //  Pikachu
 //
-//  Created by Hello on 2023/12/07.
+//  Created by Hosung.Kim on 2023/12/07.
 //
 
 
