@@ -300,7 +300,7 @@ class GameView: UIView {
     }
     private func updateSnorlaxes() {
         snorlaxFlag -= 1
-        if Int.random(in: 0...2) == 0 && snorlaxFlag < 0 {
+        if Int.random(in: 0...9) == 0 && snorlaxFlag < 0 {
             snorlaxes.append(Snorlax(x: screenWidth))
             snorlaxFlag = 20
         }
