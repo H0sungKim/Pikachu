@@ -254,8 +254,8 @@ class GameView: UIView {
     }
     
     private func initialize() {
-        screenWidth = Int(self.frame.width)
-        screenHeight = Int(self.frame.height)
+        screenWidth = Int(UIScreen.main.bounds.width)
+        screenHeight = Int(UIScreen.main.bounds.height)
         gameTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
         initializeSound()
     }
